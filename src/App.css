@@ -23,11 +23,45 @@
   color: #61dafb;
 }
 
+.about-item {
+  text-decoration: none;
+  display: inline-block;
+  margin: 10px;
+  padding: 0 20px;
+}
+
+.post-item {
+  font-size: 1.3em;
+  text-decoration: none;
+  display: inline-block;
+  margin: 10px;
+  padding: 0 20px;
+  border: 3px solid black;
+  border-radius: 20px;
+}
+
+.post-subtext {
+  font-size: .8em;
+  font-style: italic;
+}
+
+.project-item {
+  text-decoration: none;
+  display: inline-block;
+  margin: 10px;
+  padding: 0 20px;
+}
+
 .menu-item {
   text-decoration: none;
   display: inline-block;
   margin: 10px;
   padding: 0 20px;
+}
+
+.project-screenshot {
+  max-width: 256px;
+  max-height: 256px;
 }
 
 @keyframes App-logo-spin {

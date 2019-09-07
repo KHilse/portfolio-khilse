@@ -1,9 +1,35 @@
 import React from "react";
 
-const Projects = props => {
-	return (
-		<h2>Projects Page</h2>
-	)
+class Projects extends React.Component {
+
+	constructor (props) {
+		super (props);
+
+		this.state = {
+			projects: [
+				["Asteroid Defense", "https://khilse.github.io/asteroid-defense/index.html", "./asteroid-defense.png"],
+				["Pedals and Pints", "https://pedals-and-pints-v1.herokuapp.com/", "./pedals-and-pints.png"]
+			]
+		}
+	}
+
+	render() {
+
+		let projects = this.state.projects.map((p,i) => {
+			let [title, url, screenshot] = p;
+
+			return (
+				<li className="project-item"key={i}><a href={url}>{title}</a><br /><img className="project-screenshot" src={screenshot} alt="" /></li>
+			)
+		})
+
+
+		return (
+			<ul>
+				{projects}
+			</ul>
+		)
+	}
 }
 
 export default Projects;

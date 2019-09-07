@@ -13,12 +13,15 @@ import Projects from "./pages/projects";
 
 const Content = props => {
 
+  console.log("CONTENT PROPS", props);
+  let posts = props.blogPosts;
+
   return (
   <main>
     <div>
       <Route exact path="/" component={Home} />
       <Route path="/about" component={About} />
-      <Route path="/blog" component={Blog} />
+      <Route path="/blog" render={(props) => <Blog blogPosts={posts} /> } />
       <Route path="/projects" component={Projects} />
     </div>
   </main>
