@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/portfolio-khilse/static/css/main.4e0f9518.chunk.css",
+    "main.js": "/portfolio-khilse/static/js/main.97cf7b06.chunk.js",
+    "main.js.map": "/portfolio-khilse/static/js/main.97cf7b06.chunk.js.map",
+    "runtime~main.js": "/portfolio-khilse/static/js/runtime~main.b698ae4f.js",
+    "runtime~main.js.map": "/portfolio-khilse/static/js/runtime~main.b698ae4f.js.map",
+    "static/js/2.0d5725fb.chunk.js": "/portfolio-khilse/static/js/2.0d5725fb.chunk.js",
+    "static/js/2.0d5725fb.chunk.js.map": "/portfolio-khilse/static/js/2.0d5725fb.chunk.js.map",
+    "index.html": "/portfolio-khilse/index.html",
+    "precache-manifest.6d56a78741eacf64eb97378fc759fe2b.js": "/portfolio-khilse/precache-manifest.6d56a78741eacf64eb97378fc759fe2b.js",
+    "service-worker.js": "/portfolio-khilse/service-worker.js",
+    "static/css/main.4e0f9518.chunk.css.map": "/portfolio-khilse/static/css/main.4e0f9518.chunk.css.map"
+  }
+}
