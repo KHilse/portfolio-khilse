@@ -1,5 +1,4 @@
 import React from "react";
-import Menu from "./menu";
 
 const Header = props => {
 	return (

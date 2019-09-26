@@ -1,4 +1,5 @@
 import React from "react";
+import ProjectItem from './projectitem';
 
 class Projects extends React.Component {
 
@@ -19,15 +20,15 @@ class Projects extends React.Component {
 			let [title, url, screenshot] = p;
 
 			return (
-				<li className="project-item"key={i}><a href={url}>{title}</a><br /><img className="project-screenshot" src={screenshot} alt="" /></li>
+				<ProjectItem title={title} url={url} screenshot={screenshot} />
 			)
 		})
 
 
 		return (
-			<ul>
+			<div>
 				{projects}
-			</ul>
+			</div>
 		)
 	}
 }
