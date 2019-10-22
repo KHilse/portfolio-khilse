@@ -1,18 +1,17 @@
 import React, { useState, useEffect } from "react";
 import ProjectItem from './projectitem';
+import TextItem from './textitem';
+import { textContent } from './textcontent';
 
 const SpinMenu = props => {
 
-	const [items, setItems] = useState([
-		["Asteroid Defense", "https://khilse.github.io/asteroid-defense/index.html", "./asteroid-defense.png", 180],
-		["Pedals and Pints", "https://pedals-and-pints-v1.herokuapp.com/", "./pedals-and-pints.png", 240]
-	]);
+	const [items, setItems] = useState(textContent);
 	const [navAngleOffset, setNavAngleOffset] = useState(props.navAngleOffset);
 	const [style, setStyle] = useState('');
 
 	useEffect(() => {
 		window.addEventListener('resize', updateDimensions);
-		setTimeout(handleTimeout, 1000);
+		setTimeout(handleTimeout, 500); // Add an initial delay to the spin menu so everything renders before the spin starts
 	}, [navAngleOffset]);
 
 	// function getDerivedStateFromProps(props,state) {
@@ -23,7 +22,7 @@ const SpinMenu = props => {
 	function handleTimeout() {
 		let proj = [...items];
 		proj.forEach(project => {
-			project[3] -= 180;
+			project[4] -= 180;
 		})
 		setItems(proj);
 	}
@@ -41,11 +40,22 @@ const SpinMenu = props => {
 	}
 
 	let projectInfo = items.map((p,i) => {
-		let [title, url, screenshot, angle] = p;
+		let [type, title, content, screenshot, angle] = p;
 		angle += props.navAngleOffset;
-		return (
-			<ProjectItem key={i} title={title} url={url} screenshot={screenshot} angle={angle} />
-		)
+		let elem = <></>;
+		console.log(`type=${type}, title=${title}, content=${content}, screenshot=${screenshot}, angle=${angle}`)
+		switch (type) {
+			case 'text':
+				elem = <TextItem key={i} title={title} content={content} screenshot={screenshot} angle={angle} />;
+				break;
+			case 'project':
+				elem = <ProjectItem key={i} title={title} url={content} screenshot={screenshot} angle={angle} />;
+				break;
+			default:
+				break;
+		}
+
+		return elem;		
 	})
 
 	return (
