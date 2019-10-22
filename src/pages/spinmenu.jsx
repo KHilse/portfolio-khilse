@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from "react";
 import ProjectItem from './projectitem';
 import TextItem from './textitem';
-import { textContent } from './textcontent';
+import MenuItem from './menuitem';
+import { menuItems } from './textcontent';
 
 const SpinMenu = props => {
 
-	const [items, setItems] = useState(textContent);
+	const [items, setItems] = useState(menuItems);
 	const [navAngleOffset, setNavAngleOffset] = useState(props.navAngleOffset);
 	const [style, setStyle] = useState('');
 
@@ -22,7 +23,7 @@ const SpinMenu = props => {
 	function handleTimeout() {
 		let proj = [...items];
 		proj.forEach(project => {
-			project[4] -= 180;
+			project[1] -= 180;
 		})
 		setItems(proj);
 	}
@@ -40,26 +41,16 @@ const SpinMenu = props => {
 	}
 
 	let projectInfo = items.map((p,i) => {
-		let [type, title, content, screenshot, angle] = p;
+		let [title, angle] = p;
 		angle += props.navAngleOffset;
-		let elem = <></>;
-		console.log(`type=${type}, title=${title}, content=${content}, screenshot=${screenshot}, angle=${angle}`)
-		switch (type) {
-			case 'text':
-				elem = <TextItem key={i} title={title} content={content} screenshot={screenshot} angle={angle} />;
-				break;
-			case 'project':
-				elem = <ProjectItem key={i} title={title} url={content} screenshot={screenshot} angle={angle} />;
-				break;
-			default:
-				break;
-		}
-
-		return elem;		
+		//console.log(`title=${title}, angle=${angle}`);
+		return (
+			<MenuItem key={i} title={title} angle={angle} />
+		);		
 	})
 
 	return (
-		<div className="project-radius" style={{style}}>
+		<div className="menu-radius" style={{style}}>
 			{projectInfo}
 		</div>
 	)

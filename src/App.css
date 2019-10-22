@@ -1,6 +1,6 @@
-/* div {
-  background-color: #FFF;
-} */
+body {
+  font-size: 3vh;
+}
 
 p {
   font-family: sans-serif;
@@ -66,13 +66,26 @@ ul {
   font-style: italic;
 }
 
-.project-item {
+.menu-radius {
+  position: absolute;
+  border: 5px solid black;
+  border-radius: 50%;
+  left: calc(50vw - 100vh);
+  top: 85vh;
+  width: 200vh;
+  height: 200vh;
+  box-sizing: border-box;
+}
+
+.menu-item {
   /* border: 3px solid black; */
   position: absolute;
-  width: 40%;
-  height: 180%;
-  top: -94%;
+  width: 50%;
+  height: 100%;
+  top: -30%;
   left: 50%;
+  margin: -4% 0px;
+  padding: 0;
   transition: transform 1s;
   background-color: rgba(255, 255, 255, 0);
 }
@@ -115,24 +128,24 @@ ul {
   z-index: 10;
 }
 
-.menu-item {
-  text-decoration: none;
-  display: inline-block;
-  margin: 10px;
-  padding: 0 20px;
+.nav {
+  position: fixed;
+  bottom: 5%;
+  left: 50%;
+  width: 20%;
+  height: 5%;
+  transform: translate(-50%, 0px);
 }
 
-.project-radius {
-  position: absolute;
-  border: 5px solid black;
-  border-radius: 50%;
-  top: 50%;
-  left: 50%;
-  width: 100vh;
-  height: 100vh;
-  transform: translate(-50%, 25%);
-  z-index: 10;
+.nav-item {
+  text-decoration: none;
+  display: inline-block;
+  font-size: 3em;
+  margin: 0;
+  padding: 0 5%;
 }
+
+
 
 .project-screenshot {
   width: 100%;
@@ -141,11 +154,3 @@ ul {
   max-height: 180px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}

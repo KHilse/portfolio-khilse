@@ -1,3 +1,13 @@
+export const menuItems = [
+    [ 'About Me', 0],
+    [ 'Biography', 60],
+    [ 'Skills', 120],
+    [ 'Project: Asteroid Defense', 180],
+    [ 'Project: Pedals and Pints', 240],
+    [ 'Project: tec.Hire', 300]
+]
+
+
 export const textContent = [
     ['text', 'Biography', `
     <content>

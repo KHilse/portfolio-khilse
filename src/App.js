@@ -32,8 +32,8 @@ class App extends React.Component {
     return (
       <div className="App">
         <Header />
-        <Nav handleNavClick={this.handleNavClick} />
         <SpinMenu navAngleOffset={this.state.navAngleOffset} />
+        <Nav handleNavClick={this.handleNavClick} />
       </div>
     )
   }
