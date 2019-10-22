@@ -3,7 +3,7 @@ import './App.css';
 //import {BrowserRouter as Router} from "react-router-dom";
 import Header from "./navigation/header";
 import Nav from "./navigation/nav";
-import Projects from "./pages/projects";
+import SpinMenu from "./pages/spinmenu";
 
 class App extends React.Component {
 
@@ -20,10 +20,10 @@ class App extends React.Component {
     console.log('clicked', e.target.id)
     let newAngle = 0;
     if (e.target.id === 'left') {
-      newAngle = this.state.navAngleOffset - 30;
+      newAngle = this.state.navAngleOffset - 60;
     }
     else if (e.target.id === 'right') {
-      newAngle = this.state.navAngleOffset + 30;
+      newAngle = this.state.navAngleOffset + 60;
     }
     this.setState({ navAngleOffset: newAngle })
   }
@@ -33,7 +33,7 @@ class App extends React.Component {
       <div className="App">
         <Header />
         <Nav handleNavClick={this.handleNavClick} />
-        <Projects navAngleOffset={this.state.navAngleOffset} />
+        <SpinMenu navAngleOffset={this.state.navAngleOffset} />
       </div>
     )
   }
