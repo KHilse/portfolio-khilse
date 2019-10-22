@@ -6,6 +6,10 @@ p {
   font-family: sans-serif;
 }
 
+/* svg {
+  background-color: lightgray;
+} */
+
 ul {
   text-decoration: none;
   list-style-type: none;
@@ -29,15 +33,11 @@ ul {
   pointer-events: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.header {
+  position: absolute;
+  width: 100%;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
 .App-link {
@@ -145,7 +145,25 @@ ul {
   padding: 0 5%;
 }
 
+#shape-1 {
+  position: absolute;
+  left: -400px;
+  top: 200px;
+  width: 400px;
+  height: 400px;
+  transition: left 1s, top 1s, transform 1s;
+  z-index: -1;
+}
 
+#shape-2 {
+  position: absolute;
+  left: 400px;
+  top: 200px;
+  width: 400px;
+  height: 400px;
+  transition: left 1s, top 1s, transform 1s;
+  z-index: -1;
+}
 
 .project-screenshot {
   width: 100%;
