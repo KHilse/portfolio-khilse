@@ -15,6 +15,7 @@ import { bioContent, aboutContent, skillsContent } from './pages/textcontent';
 // 4: Project: Pedals and Pints
 // 5: Project: tec.Hire
 
+
 const App = props => {
 
   const [navAngleOffset, setNavAngleOffset] = useState(0);
