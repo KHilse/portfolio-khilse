@@ -24,7 +24,7 @@ ul {
   text-align: center;
   width: 100vw;
   height: 100vh;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .App-logo {
@@ -130,9 +130,9 @@ ul {
 
 .nav {
   position: fixed;
-  bottom: 5%;
+  bottom: 8%;
   left: 50%;
-  width: 20%;
+  width: 50%;
   height: 5%;
   transform: translate(-50%, 0px);
 }
@@ -172,3 +172,58 @@ ul {
   max-height: 180px;
 }
 
+.content {
+  position: absolute;
+  width: 90vw;
+  height: 80vh;
+  top: 10vh;
+  left: 5vw;
+}
+
+.hide-bio {
+  position: absolute;
+  width: 90vw;
+  height: 80vh;
+  top: -20vh;
+  left: -105vw;
+}
+
+.hide-about {
+  position: absolute;
+  width: 90vw;
+  height: 80vh;
+  top: -20vh;
+  left: -105vw;
+}
+
+.hide-skills {
+  position: absolute;
+  width: 90vw;
+  height: 80vh;
+  top: -20vh;
+  left: -105vw;
+}
+
+.hide-ad {
+  position: absolute;
+  width: 90vw;
+  height: 80vh;
+  top: -20vh;
+  left: -105vw;
+}
+
+.hide-pp {
+  position: absolute;
+  width: 90vw;
+  height: 80vh;
+  top: -20vh;
+  left: -105vw;
+}
+
+.hide-th {
+  position: absolute;
+  width: 90vw;
+  height: 80vh;
+  top: -20vh;
+  left: -105vw;
+}

@@ -2,8 +2,8 @@ import React from "react";
 
 const Header = props => {
 
-	let shape1Style = {left: props.shape1[0], top: props.shape1[1], transform: `rotate(${props.shape1[2]}deg) scale(10,10)`};
-	let shape2Style = {left: props.shape2[0], top: props.shape2[1], transform: `rotate(${props.shape2[2]}deg) scale(10,10)`};
+	let shape1Style = {left: props.shape1[0], top: props.shape1[1], transform: `rotate(${props.shape1[2]}deg) scale(8,8)`};
+	let shape2Style = {left: props.shape2[0], top: props.shape2[1], transform: `rotate(${props.shape2[2]}deg) scale(8,8)`};
 
 	return (
 		<div className="header">

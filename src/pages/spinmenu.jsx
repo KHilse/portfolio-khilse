@@ -1,6 +1,4 @@
 import React, { useState, useEffect } from "react";
-import ProjectItem from './projectitem';
-import TextItem from './textitem';
 import MenuItem from './menuitem';
 import { menuItems } from './textcontent';
 
@@ -37,7 +35,6 @@ const SpinMenu = props => {
 			left: '50%',
 			transform: 'translate(-50%, -50%)',
 		});
-		// TODO: scale projectitems accordingly
 	}
 
 	let projectInfo = items.map((p,i) => {
