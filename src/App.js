@@ -1,10 +1,11 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './App.css';
 import Header from "./navigation/header";
 import Nav from "./navigation/nav";
 import SpinMenu from "./pages/spinmenu";
 import ProjectItem from './pages/projectitem';
 import TextItem from './pages/textitem';
+import { bioContent, aboutContent, skillsContent } from './pages/textcontent';
 
 // Hint for the pages that match the index
 // 0: Bio
@@ -18,12 +19,13 @@ const App = props => {
 
   const [navAngleOffset, setNavAngleOffset] = useState(0);
   const [shapeIndex, setShapeIndex] = useState(0);
-  const [bioClass, setBioClass] = useState('hide-bio');
-  const [aboutClass, setAboutClass] = useState('hide-about');
-  const [skillsClass, setSkillsClass] = useState('hide-skills');
-  const [adClass, setAdClass] = useState('hide-ad');
-  const [ppClass, setPpClass] = useState('hide-pp');
-  const [thClass, setThClass] = useState('hide-th');
+  const [bioClass, setBioClass] = useState('content hide-bio');
+  const [aboutClass, setAboutClass] = useState('content hide-about');
+  const [skillsClass, setSkillsClass] = useState('content hide-skills');
+  const [adClass, setAdClass] = useState('content hide-ad');
+  const [ppClass, setPpClass] = useState('content hide-pp');
+  const [thClass, setThClass] = useState('content hide-th');
+  const [refresh] = useState(true);
 
   const shape1 = [
     [-800, 400, 0],
@@ -50,8 +52,15 @@ const App = props => {
 
   const STEP_ANGLE = 60;
 
-  const handleNavClick = (e) => {
-    console.log('clicked', e.target.id)
+  useEffect(() => {
+    setTimeout(() => {
+      setBioClass('content content-show');
+      setShapeIndex(0);
+    })
+  }, [refresh])
+
+  function handleNavClick(e) {
+    console.log('clicked', e.target.id, shapeIndex)
     let newAngle = 0;
     if (e.target.id === 'left') {
       if (shapeIndex === 0) {
@@ -83,22 +92,22 @@ const App = props => {
   function hideContent(i) {
     switch(i) {
       case 0: // bio
-        setBioClass('hide-bio');
+        setBioClass('content hide-bio');
         break;
       case 1: // about
-        setAboutClass('hide-about');
+        setAboutClass('content hide-about');
         break;
       case 2: // skills
-        setSkillsClass('hide-skills');
+        setSkillsClass('content hide-skills');
         break;
       case 3: // ad
-        setAdClass('hide-ad');
+        setAdClass('content hide-ad');
         break;
       case 4: // pp
-        setPpClass('hide-pp');
+        setPpClass('content hide-pp');
         break;
       case 5: // th
-        setThClass('hide-th');
+        setThClass('content hide-th');
         break;
       default:
         break;
@@ -108,22 +117,22 @@ const App = props => {
   function showContent(i) {
     switch(i) {
       case 0: // bio
-        setBioClass('content');
+        setBioClass('content content-show');
         break;
       case 1: // about
-        setAboutClass('content');
+        setAboutClass('content content-show');
         break;
       case 2: // skills
-        setSkillsClass('content');
+        setSkillsClass('content content-show');
         break;
       case 3: // ad
-        setAdClass('content');
+        setAdClass('content content-show');
         break;
       case 4: // pp
-        setPpClass('content');
+        setPpClass('content content-show');
         break;
       case 5: // th
-        setThClass('content');
+        setThClass('content content-show');
         break;
       default:
         break;
@@ -133,9 +142,9 @@ const App = props => {
   return (
     <div className="App">
       <Header shape1={shape1[shapeIndex]} shape2={shape2[shapeIndex]} />
-      <TextItem id="bio" class={bioClass} />
-      <TextItem id="about" class={aboutClass} />
-      <TextItem id="skills" class={skillsClass} />
+      <TextItem id="bio" class={bioClass} content={bioContent} />
+      <TextItem id="about" class={aboutClass} content={aboutContent} />
+      <TextItem id="skills" class={skillsClass} content={skillsContent} />
       <ProjectItem id="ad" class={adClass} />
       <ProjectItem id="pp" class={ppClass} />
       <ProjectItem id="th" class={thClass} />

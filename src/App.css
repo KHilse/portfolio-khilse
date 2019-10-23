@@ -10,13 +10,6 @@ p {
   background-color: lightgray;
 } */
 
-ul {
-  text-decoration: none;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
 .App {
   position: absolute;
   margin: 0;
@@ -24,7 +17,7 @@ ul {
   text-align: center;
   width: 100vw;
   height: 100vh;
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 
 .App-logo {
@@ -138,11 +131,14 @@ ul {
 }
 
 .nav-item {
-  text-decoration: none;
   display: inline-block;
   font-size: 3em;
   margin: 0;
   padding: 0 5%;
+  text-decoration: none;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 #shape-1 {
@@ -175,55 +171,72 @@ ul {
 .content {
   position: absolute;
   width: 90vw;
-  height: 80vh;
-  top: 10vh;
+  height: 60vh;
+  background-color: rgba(208,180,192,.85);
+  box-shadow: 1em 1em 1em .05em black;
+  text-align: left;
+  overflow: auto;
+  transition: left 1s, top 1s;
+}
+
+.content-show {
+  top: 15vh;
   left: 5vw;
 }
 
 .hide-bio {
-  position: absolute;
-  width: 90vw;
-  height: 80vh;
-  top: -20vh;
-  left: -105vw;
+  top: 20vh;
+  left: 105vw;
 }
 
 .hide-about {
-  position: absolute;
-  width: 90vw;
-  height: 80vh;
-  top: -20vh;
-  left: -105vw;
+  top: 60vh;
+  left: 105vw;
 }
 
 .hide-skills {
-  position: absolute;
-  width: 90vw;
-  height: 80vh;
-  top: -20vh;
-  left: -105vw;
+  top: 90vh;
+  left: 105vw;
 }
 
 .hide-ad {
-  position: absolute;
-  width: 90vw;
-  height: 80vh;
   top: -20vh;
   left: -105vw;
 }
 
 .hide-pp {
-  position: absolute;
-  width: 90vw;
-  height: 80vh;
-  top: -20vh;
+  top: 40vh;
   left: -105vw;
 }
 
 .hide-th {
-  position: absolute;
-  width: 90vw;
-  height: 80vh;
-  top: -20vh;
+  top: 90vh;
   left: -105vw;
+}
+
+.tech-container {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
+  grid-template-rows: auto auto auto;
+  overflow: hidden;
+}
+
+.tech {
+  text-align: center;
+  padding: 1em;
+}
+
+.tech-icon {
+  display: inline-block;
+  width: auto;
+  height: 50%;
+  max-height: 50%;
+}
+
+.tech-title {
+  text-align: center;
+  margin: 0.5em;
+  padding: 0;
 }
