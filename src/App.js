@@ -54,9 +54,10 @@ const App = props => {
 
   const STEP_ANGLE = 60;
 
+  // The menu rotates, so left/right reversal makes more sense from a UX perspective :-)
   const handlers = useSwipeable({
-    onSwipedLeft: () => handleNav('left'),
-    onSwipedRight: () => handleNav('right'),
+    onSwipedLeft: () => handleNav('right'),
+    onSwipedRight: () => handleNav('left'),
     preventDefaultTouchmoveEvent: true,
     trackMouse: true
   });
