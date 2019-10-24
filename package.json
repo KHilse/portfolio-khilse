@@ -2,7 +2,7 @@
   "name": "kirkh-portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://khilse.github.io/portfolio-khilse",
+  "homepage": "https://kirkh-portfolio.herokuapp.com/",
   "dependencies": {
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
