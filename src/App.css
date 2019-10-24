@@ -190,32 +190,32 @@ p {
 
 .hide-bio {
   top: 20vh;
-  left: 105vw;
+  left: 115vw;
 }
 
 .hide-about {
   top: 60vh;
-  left: 105vw;
+  left: 115vw;
 }
 
 .hide-skills {
   top: 90vh;
-  left: 105vw;
+  left: 115vw;
 }
 
 .hide-ad {
   top: -20vh;
-  left: -105vw;
+  left: -115vw;
 }
 
 .hide-pp {
   top: 40vh;
-  left: -105vw;
+  left: -115vw;
 }
 
 .hide-th {
   top: 90vh;
-  left: -105vw;
+  left: -115vw;
 }
 
 .tech-container {
@@ -224,7 +224,7 @@ p {
   display: grid;
   grid-template-columns: auto auto auto auto auto auto;
   grid-template-rows: auto auto auto;
-  overflow: hidden;
+  overflow: auto;
 }
 
 .tech {

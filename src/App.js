@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './App.css';
+import { useSwipeable } from 'react-swipeable';
 import Header from "./navigation/header";
 import Nav from "./navigation/nav";
 import SpinMenu from "./pages/spinmenu";
@@ -53,6 +54,13 @@ const App = props => {
 
   const STEP_ANGLE = 60;
 
+  const handlers = useSwipeable({
+    onSwipedLeft: () => handleNav('left'),
+    onSwipedRight: () => handleNav('right'),
+    preventDefaultTouchmoveEvent: true,
+    trackMouse: true
+  });
+  
   useEffect(() => {
     setTimeout(() => {
       setBioClass('content content-show');
@@ -61,9 +69,13 @@ const App = props => {
   }, [refresh])
 
   function handleNavClick(e) {
-    console.log('clicked', e.target.id, shapeIndex)
+    console.log('clicked', e.target.id, shapeIndex);
+    handleNav(e.target.id);
+  }
+
+  function handleNav(direction) {
     let newAngle = 0;
-    if (e.target.id === 'left') {
+    if (direction === 'left') {
       if (shapeIndex === 0) {
         hideContent(0);
         showContent(5);
@@ -75,7 +87,7 @@ const App = props => {
       }
       newAngle = navAngleOffset - STEP_ANGLE;
     }
-    else if (e.target.id === 'right') {
+    else if (direction === 'right') {
       if (shapeIndex === 5) {
         hideContent(5);
         showContent(0);
@@ -88,6 +100,7 @@ const App = props => {
       newAngle = navAngleOffset + STEP_ANGLE;
     }
     setNavAngleOffset(newAngle);
+  
   }
 
   function hideContent(i) {
