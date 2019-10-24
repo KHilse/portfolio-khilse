@@ -125,24 +125,32 @@ p {
   margin: 1em 1.5em;
 }
 
-.nav {
+.nav-container {
   position: fixed;
   bottom: 8%;
   left: 50%;
   width: 50%;
   height: 5%;
   transform: translate(-50%, 0px);
+  margin: 0;
+  padding: 0;
+}
+
+.nav-bar {
+  text-decoration: none;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .nav-item {
   display: inline-block;
   font-size: 3em;
-  margin: 0;
-  padding: 0 5%;
   text-decoration: none;
   list-style-type: none;
   margin: 0;
   padding: 0;
+  cursor: pointer;
 }
 
 #shape-1 {
