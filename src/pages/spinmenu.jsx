@@ -1,12 +1,21 @@
 import React, { useState, useEffect } from "react";
 import MenuItem from './menuitem';
 import { menuItems } from './textcontent';
+import { useSwipeable } from 'react-swipeable';
 
 const SpinMenu = props => {
 
 	const [items, setItems] = useState(menuItems);
 	const [navAngleOffset, setNavAngleOffset] = useState(props.navAngleOffset);
 	const [style, setStyle] = useState('');
+
+	// The menu rotates, so left/right reversal makes more sense from a UX perspective :-)
+	const handlers = useSwipeable({
+		onSwipedLeft: () => props.handleNav('right'),
+		onSwipedRight: () => props.handleNav('left'),
+		preventDefaultTouchmoveEvent: true,
+		trackMouse: true
+	});
 
 	useEffect(() => {
 		window.addEventListener('resize', updateDimensions);
@@ -47,7 +56,7 @@ const SpinMenu = props => {
 	})
 
 	return (
-		<div className="menu-radius" style={{style}}>
+		<div className="menu-radius" style={{style}} {...handlers}>
 			{projectInfo}
 		</div>
 	)

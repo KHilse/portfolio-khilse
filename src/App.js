@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import './App.css';
-import { useSwipeable } from 'react-swipeable';
 import Header from "./navigation/header";
 import Nav from "./navigation/nav";
 import SpinMenu from "./pages/spinmenu";
@@ -15,7 +14,6 @@ import { bioContent, aboutContent, skillsContent } from './pages/textcontent';
 // 3: Project: Asteroid Defense
 // 4: Project: Pedals and Pints
 // 5: Project: tec.Hire
-
 
 const App = props => {
 
@@ -53,14 +51,6 @@ const App = props => {
   ];
 
   const STEP_ANGLE = 60;
-
-  // The menu rotates, so left/right reversal makes more sense from a UX perspective :-)
-  const handlers = useSwipeable({
-    onSwipedLeft: () => handleNav('right'),
-    onSwipedRight: () => handleNav('left'),
-    preventDefaultTouchmoveEvent: true,
-    trackMouse: true
-  });
   
   useEffect(() => {
     setTimeout(() => {
@@ -155,7 +145,7 @@ const App = props => {
   }
 
   return (
-    <div className="App" {...handlers}>
+    <div className="App">
       <Header shape1={shape1[shapeIndex]} shape2={shape2[shapeIndex]} />
       <TextItem id="bio" class={bioClass} content={bioContent} />
       <TextItem id="about" class={aboutClass} content={aboutContent} />
@@ -163,8 +153,8 @@ const App = props => {
       <ProjectItem id="ad" class={adClass} />
       <ProjectItem id="pp" class={ppClass} />
       <ProjectItem id="th" class={thClass} />
-      <SpinMenu navAngleOffset={navAngleOffset} />
-      <Nav handleNavClick={handleNavClick} />
+      <SpinMenu navAngleOffset={navAngleOffset} handleNav={handleNav} />
+      <Nav handleNavClick={handleNavClick} handleNav={handleNav} />
     </div>
   )
 }

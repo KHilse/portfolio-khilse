@@ -20,6 +20,7 @@ const Header = props => {
 			</div>
 
 			<h1>Kirk Hilse</h1>
+			<p className="subhead">Full-stack Software Developer</p>
 
 		</div>
 	)
