@@ -75,7 +75,7 @@ const App = props => {
 
   function handleNav(direction) {
     let newAngle = 0;
-    if (direction === 'left') {
+    if (direction === 'right') {
       if (shapeIndex === 0) {
         hideContent(0);
         showContent(5);
@@ -87,7 +87,7 @@ const App = props => {
       }
       newAngle = navAngleOffset - STEP_ANGLE;
     }
-    else if (direction === 'right') {
+    else if (direction === 'left') {
       if (shapeIndex === 5) {
         hideContent(5);
         showContent(0);
@@ -154,7 +154,7 @@ const App = props => {
   }
 
   return (
-    <div className="App">
+    <div className="App" {...handlers}>
       <Header shape1={shape1[shapeIndex]} shape2={shape2[shapeIndex]} />
       <TextItem id="bio" class={bioClass} content={bioContent} />
       <TextItem id="about" class={aboutClass} content={aboutContent} />
