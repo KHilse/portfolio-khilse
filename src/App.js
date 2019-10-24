@@ -95,19 +95,19 @@ const App = props => {
       case 0: // bio
         setBioClass('content hide-bio');
         break;
-      case 1: // about
+      case 5: // about
         setAboutClass('content hide-about');
         break;
-      case 2: // skills
+      case 4: // skills
         setSkillsClass('content hide-skills');
         break;
       case 3: // ad
         setAdClass('content hide-ad');
         break;
-      case 4: // pp
+      case 2: // pp
         setPpClass('content hide-pp');
         break;
-      case 5: // th
+      case 1: // th
         setThClass('content hide-th');
         break;
       default:
@@ -120,19 +120,19 @@ const App = props => {
       case 0: // bio
         setBioClass('content content-show');
         break;
-      case 1: // about
+      case 5: // about
         setAboutClass('content content-show');
         break;
-      case 2: // skills
+      case 4: // skills
         setSkillsClass('content content-show');
         break;
       case 3: // ad
         setAdClass('content content-show');
         break;
-      case 4: // pp
+      case 2: // pp
         setPpClass('content content-show');
         break;
-      case 5: // th
+      case 1: // th
         setThClass('content content-show');
         break;
       default:

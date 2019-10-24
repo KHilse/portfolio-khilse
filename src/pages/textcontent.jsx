@@ -9,25 +9,24 @@ export const menuItems = [
 
 export const bioContent = {
     content: `
-        <p>Hi, I'm Kirk Hilse and I'm a Seattle-area software developer</p>
-        <p>I've been writing software since the days when total RAM was less than the file size of your current computer's system error beep file. I prefer 'experienced' over 'old' and I prefer the company of younger co-workers.</p>
-        <p>I did some fun things while attending the University of Washington in Seattle:</p>
-        <ul>
-            <li>I wrote a chorus pedal in <strong>Fortran</strong>
-            <li>I created a MIDI sequencer in <strong>SmallTalk</strong>
-            <li>I built a simple AI app in <strong>LISP</strong> that took noise and filtered it, turning it into input to write its own music compositions
-        </ul>
-        <p>After graduating, I went to work at Spectral Inc., a company that made software/hardware digital recording and editing systems for recording studios. Amongst many other duties, I wrote two apps in <strong>C++</strong> that shipped with the product. I worked there for seven years, when the company was purchased by a larger company and dismantled.</p>
-        <p>I then spent a short time in contract IT, before taking a 1.5 year role under contract to Microsoft on the Windows Server 2000 project to test Windows Active Directory Administration features</>
+    <p class="text-item-content">I’m a full-stack software developer who grew up in the Seattle area. I’ve been super lucky to work on some awesome projects at great companies, and I’m looking to continue the trend.</p>
+    <p class="text-item-content">I am a UW Seattle grad with a BS in Music Technology, which is a fusion of CSci and Music. The core classes matched both the CSci core curriculum and the School of Music curriculum, with calc, diff eq, and physics thrown in as well. Beyond that, I elected in audio engineering, algorithmic synthesis and composition, and psychomusicology.</p>
+    <p class="text-item-content">After graduation, I went to work at Spectral Inc., a company that made the first affordable digital audio recording and editing workstation platform for the recording industry. I was the first hire, and as the company grew to 17 employees, I moved through nearly every part of the company, including software development, marketing, logistics, internal infrastructure, and top-level customer support. My tenure ended after seven years when the company was purchased and dismantled for its IP.</p>
+    <p class="text-item-content">I then did a short stint in IT while looking, then landed a contract job as software QA at Microsoft. I tested Active Directory administration and application compatibility on the Windows 2000 Server project for around 18 months.</p>
+    <p class="text-item-content">I then went to Microsoft’s Developer Division as a full-time SDE/T employee. I started on the Scripting team, which developed VBScript and Microsoft’s implementation of JavaScript. I then worked on VSTO 1 and 2, Microsoft’s Visual Studio dev tools for code behind Office documents. Finally the team spun up the net-new SharePoint Developer Tools project and I worked on that for the remainder of my time there, a total of 9.5 years.</p>
+    <p class="text-item-content">At that point I burned out. Microsoft’s first version of agile development made for a brutal work environment, and even though I held on through two enormous 1.5-year product cycles, I finally called it quits along many other coworkers.</p>
+    <p class="text-item-content">I then departed the software industry for a decade to start up a commercial craft brewery as its CEO. I built the brewery up from bare floor and ran it for 5.5 years in production before selling it to some good industry friends. At that time I looked at my options and found that the software industry had matured quite a lot, so I decided to reenter.</p>
+    <p class="text-item-content">It didn’t take long to find out that my skill set was quite dated. In the span of a decade, languages, platforms and other technologies had been created, updated, and in some cases retired. Since I already had a solid base of computer science experience, I decided that the most expedient way to get current was to go through a software development bootcamp. I have recently graduated from General Assembly Seattle, first in class with current MERN stack experience along with TypeScript and some Python/Flask.</p>
+    <p class="text-item-content">I’m currently looking for a full-stack development career at a smaller company which is doing something interesting and helpful to people. I hope to work with very bright people in an encouraging and healthy culture, where I can innovate while leveraging my experience to make the team more well-rounded.</p>
     `
 };
 
 export const aboutContent = {
     content: `
-        <p>Outside of software, I am married with two grown kids and most of my family resides in the area.</p>
-        <p>For relaxation outdoors, I enjoy sailing, bicycle riding, and the occasional hike.</p>
-        <p>For relaxation indoors, I like to cook, watch shows with my wife, and I generally stick to RPG or strategy video games</p>
-        <p>I'm an active semi-pro musician. I play bass in Balkanarama, an Eastern Mediterranean gypsy dance band. Yes, it's as fun as it sounds. But I've played in nearly every genre, classical to metal to trip-hop.</p>
+        <p class="text-item-content">Outside of software, I am married with two grown kids and most of my family resides in the area.</p>
+        <p class="text-item-content">For relaxation outdoors, I enjoy sailing, bicycle riding, and the occasional hike. I'm a member at Sand Point Sailing on Lake Washington.</p>
+        <p class="text-item-content">For relaxation indoors, I like to cook, watch shows with my wife, and I generally stick to RPG or strategy video games.</p>
+        <p class="text-item-content">I'm an active semi-pro musician. I play bass in Balkanarama, an Eastern Mediterranean gypsy dance band. Yes, it's as fun as it sounds. But I've played in nearly every genre, classical to metal to trip-hop.</p>
     `
 }
 

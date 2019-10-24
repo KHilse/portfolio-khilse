@@ -121,6 +121,10 @@ p {
   z-index: 10;
 }
 
+.text-item-content {
+  margin: 1em 1.5em;
+}
+
 .nav {
   position: fixed;
   bottom: 8%;
