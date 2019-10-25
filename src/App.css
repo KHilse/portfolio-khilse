@@ -162,7 +162,7 @@ p {
 
 .nav-container {
   position: fixed;
-  bottom: 5%;
+  bottom: 10%;
   left: 50%;
   width: 50%;
   height: 5%;
@@ -171,6 +171,21 @@ p {
   padding: 0;
   transition: left 1s, top 1s;
 }
+
+@media screen and (max-aspect-ratio: 1/1) {
+  .nav-container {
+    position: fixed;
+    bottom: 6%;
+    left: 50%;
+    width: 50%;
+    height: 5%;
+    transform: translate(-50%, 0px);
+    margin: 0;
+    padding: 0;
+    transition: left 1s, top 1s;
+  }
+}
+
 
 .nav-bar {
   text-decoration: none;

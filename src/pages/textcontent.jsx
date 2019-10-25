@@ -187,7 +187,7 @@ export const thContent = {
     link: 'https://pedals-and-pints-v1.herokuapp.com/',
     githubClient: 'https://github.com/KHilse/techire-client',
     githubServer: 'https://github.com/KHilse/techire-server',
-    image: 'pedals-and-pints.png',
+    image: 'tecHire.png',
     skills: `
         <div class="skill">
             <img src="./badges/react.4009eef3.svg" class="tech-icon">
