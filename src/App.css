@@ -133,6 +133,10 @@ p {
   z-index: 10;
 }
 
+.text-item-heading {
+  margin-left: 1em;
+}
+
 .text-item-content {
   margin: 1em 1.5em;
 }
@@ -289,6 +293,16 @@ p {
 .hide-skills {
   top: 90vh;
   left: 115vw;
+}
+
+.hide-contact {
+  top: 40vh;
+  left: 115vw;
+}
+
+.hide-kr {
+  top: 60vh;
+  left: -115vw;
 }
 
 .hide-ad {

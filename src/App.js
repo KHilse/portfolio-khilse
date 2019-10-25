@@ -5,7 +5,7 @@ import Nav from "./navigation/nav";
 import SpinMenu from "./pages/spinmenu";
 import ProjectItem from './pages/projectitem';
 import TextItem from './pages/textitem';
-import { bioContent, aboutContent, skillsContent, adContent, ppContent, thContent } from './pages/textcontent';
+import { bioContent, aboutContent, skillsContent, contactContent, krContent, adContent, ppContent, thContent } from './pages/textcontent';
 
 const App = props => {
 
@@ -14,6 +14,8 @@ const App = props => {
   const [bioClass, setBioClass] = useState('content hide-bio');
   const [aboutClass, setAboutClass] = useState('content hide-about');
   const [skillsClass, setSkillsClass] = useState('content hide-skills');
+  const [contactClass, setContactClass] = useState('content hide-contact');
+  const [krClass, setKrClass] = useState('content hide-kr');
   const [adClass, setAdClass] = useState('content hide-ad');
   const [ppClass, setPpClass] = useState('content hide-pp');
   const [thClass, setThClass] = useState('content hide-th');
@@ -26,20 +28,25 @@ const App = props => {
     [200, 300, 90],
     [-200, 100, 45],
     [-600, 200, 25],
-    [-350, 300, -30]
+    [-350, 300, -30],
+    [300, -150, -90],
+    [100, -300, -45],
   ];
   const shape2 = [
     [-200, 100, 45],
     [-600, 200, 25],
     [-350, 300, -30],
+    [300, -150, -90],
+    [100, -300, -45],
     [-800, 400, 0],
     [400, -400, 60],
-    [200, 300, 90]
+    [200, 300, 90],
   ];
   
   // This is the angle the menu rotates for each left/right/swipe move
   // 360 degrees / 6 items
-  const STEP_ANGLE = 360 / 6;
+  const CONTENT_ITEMS = 8;
+  const STEP_ANGLE = 360 / CONTENT_ITEMS;
   
   useEffect(() => {
     setTimeout(() => {
@@ -59,8 +66,8 @@ const App = props => {
     if (direction === 'right') {
       if (shapeIndex === 0) {
         hideContent(0);
-        showContent(5);
-        setShapeIndex(5);
+        showContent(CONTENT_ITEMS-1);
+        setShapeIndex(CONTENT_ITEMS-1);
       } else {
         hideContent(shapeIndex);
         showContent(shapeIndex-1);
@@ -69,8 +76,8 @@ const App = props => {
       newAngle = navAngleOffset - STEP_ANGLE;
     }
     else if (direction === 'left') {
-      if (shapeIndex === 5) {
-        hideContent(5);
+      if (shapeIndex === CONTENT_ITEMS-1) {
+        hideContent(CONTENT_ITEMS-1);
         showContent(0);
         setShapeIndex(0);
       } else {
@@ -91,11 +98,17 @@ const App = props => {
       case 0: // bio
         setBioClass('content hide-bio');
         break;
-      case 5: // about
+      case 7: // about
         setAboutClass('content hide-about');
         break;
-      case 4: // skills
+      case 6: // skills
         setSkillsClass('content hide-skills');
+        break;
+      case 5: // contact
+        setContactClass('content hide-contact');
+        break;
+      case 4: // kr
+        setKrClass('content hide-kr');
         break;
       case 3: // ad
         setAdClass('content hide-ad');
@@ -118,11 +131,17 @@ const App = props => {
       case 0: // bio
         setBioClass('content content-show');
         break;
-      case 5: // about
+      case 7: // about
         setAboutClass('content content-show');
         break;
-      case 4: // skills
+      case 6: // skills
         setSkillsClass('content content-show');
+        break;
+      case 5: // contact
+        setContactClass('content content-show');
+        break;
+      case 4: // kr
+        setKrClass('content content-show');
         break;
       case 3: // ad
         setAdClass('content content-show');
@@ -144,6 +163,8 @@ const App = props => {
       <TextItem id="bio" class={bioClass} content={bioContent} />
       <TextItem id="about" class={aboutClass} content={aboutContent} />
       <TextItem id="skills" class={skillsClass} content={skillsContent} />
+      <TextItem id="contact" class={contactClass} content={contactContent} />
+      <ProjectItem id="kr" class={krClass} content={krContent} />
       <ProjectItem id="ad" class={adClass} content={adContent} />
       <ProjectItem id="pp" class={ppClass} content={ppContent} />
       <ProjectItem id="th" class={thClass} content={thContent} />

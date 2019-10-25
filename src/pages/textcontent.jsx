@@ -1,10 +1,12 @@
 export const menuItems = [
     [ 'Biography', 180 ],
-    [ 'About Me', 240 ],
-    [ 'Skills', 300 ],
-    [ 'Project: Asteroid Defense', 0 ],
-    [ 'Project: Pedals and Pints', 60 ],
-    [ 'Project: tec.Hire', 120 ],
+    [ 'About Me', 225 ],
+    [ 'Skills', 270 ],
+    [ 'Contact', 315 ],
+    [ 'Project: Krang React Synth', 0 ],
+    [ 'Project: Asteroid Defense', 45 ],
+    [ 'Project: Pedals and Pints', 90 ],
+    [ 'Project: tec.Hire', 135 ],
 ]
 
 export const bioContent = {
@@ -117,6 +119,43 @@ export const skillsContent = {
             </div>
         </div>
             `
+}
+
+export const contactContent = {
+    content: `
+        <h2 class="text-item-heading">Contact Info</h2>
+        <p class="text-item-content">Shoot me an e-mail or message me on LinkedIn, and I'll respond ASAP!</p>
+        <p class="text-item-content">khilsedev@gmail.com</p>
+        <p class="text-item-content"><a href="https://www.linkedin.com/in/kirk-hilse/">LinkedIn</a></p>
+    `
+}
+
+
+export const krContent = {
+    title: 'Krang React Synth',
+    description: 'A React client-only SPA drum machine and theremin simulator, created in one day in a hackathon at GA consisting of teams of two students',
+    link: 'https://krang-react-synth.herokuapp.com/',
+    githubClient: 'https://github.com/KHilse/krang-react-synth',
+    githubServer: '',
+    image: 'krang.png',
+    skills: `
+    <div class="skill">
+        <img src="./badges/react.4009eef3.svg" class="tech-icon">
+        <p class="tech-title">React</p>
+    </div>
+    <div class="skill">
+        <img src="./badges/js.7fd50466.svg" class="tech-icon">
+        <p class="tech-title">JavaScript</p>
+    </div>
+    <div class="skill">
+        <img src="./badges/html.f0361c5e.svg" class="tech-icon">
+        <p class="tech-title">HTML&nbsp;5</p>
+    </div>
+    <div class="skill">
+        <img src="./badges/css.6971ddc7.svg" class="tech-icon">
+        <p class="tech-title">CSS</p>
+    </div>
+    `
 }
 
 export const adContent = {
