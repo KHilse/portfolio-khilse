@@ -9,6 +9,11 @@ export const menuItems = [
 
 export const bioContent = {
     content: `
+    <div class="image-sidebar">
+        <img class="image-sidebar-item" src="./spectral-express-editor-screen.png"><br />
+        <img class="image-sidebar-item" src="./IntelliSense.png"><br />
+        <img class="image-sidebar-item" src="./f096bac59cde453ee906ee39829bf069.jpg">
+    </div>
     <p class="text-item-content">I’m a full-stack software developer who grew up in the Seattle area. I’ve been super lucky to work on some awesome projects at great companies, and I’m looking to continue the trend.</p>
     <p class="text-item-content">I am a UW Seattle grad with a BS in Music Technology, which is a fusion of CSci and Music. The core classes matched both the CSci core curriculum and the School of Music curriculum, with calc, diff eq, and physics thrown in as well. Beyond that, I elected in audio engineering, algorithmic synthesis and composition, and psychomusicology.</p>
     <p class="text-item-content">After graduation, I went to work at Spectral Inc., a company that made the first affordable digital audio recording and editing workstation platform for the recording industry. I was the first hire, and as the company grew to 17 employees, I moved through nearly every part of the company, including software development, marketing, logistics, internal infrastructure, and top-level customer support. My tenure ended after seven years when the company was purchased and dismantled for its IP.</p>
@@ -23,10 +28,15 @@ export const bioContent = {
 
 export const aboutContent = {
     content: `
+        <div class="image-sidebar">
+            <img class="image-sidebar-item" src="./20190529_133200_HDR.jpg"><br />
+            <img class="image-sidebar-item" src="./20190422_174806.jpg"><br />
+            <img class="image-sidebar-item" src="./FB_IMG_1521412781007.jpg">
+        </div>
         <p class="text-item-content">Outside of software, I am married with two grown kids and most of my family resides in the area.</p>
         <p class="text-item-content">For relaxation outdoors, I enjoy sailing, bicycle riding, and the occasional hike. I'm a member at Sand Point Sailing on Lake Washington.</p>
         <p class="text-item-content">For relaxation indoors, I like to cook, watch shows with my wife, and I generally stick to RPG or strategy video games. I'm a huge fan of KSP and Bethesda products.</p>
-        <p class="text-item-content">I'm an active semi-pro musician. I play bass in Balkanarama, an Eastern Mediterranean gypsy dance band. Yes, it's as fun as it sounds. But I've played in nearly every genre, classical to metal to trip-hop.</p>
+        <p class="text-item-content">I'm an active semi-pro musician. I play bass in Balkanarama, an Eastern Mediterranean gypsy dance band. Yes, it's as fun as it sounds. But I've played in nearly every genre, classical to metal to trip-hop. When I was at Microsoft, I toured with an employee band to corporate events across the country.</p>
     `
 }
 
@@ -64,6 +74,10 @@ export const skillsContent = {
             <div class="tech">
                 <img src="./badges/mongodb.9e1e331b.svg" class="tech-icon">
                 <p class="tech-title">MongoDB</p>
+            </div>
+            <div class="tech">
+                <img src="./badges/mongoose.png" class="tech-icon">
+                <p class="tech-title">Mongoose</p>
             </div>
             <div class="tech">
                 <img src="./badges/postgresql.d7c985e7.svg" class="tech-icon">
@@ -109,6 +123,8 @@ export const adContent = {
     title: 'Asteroid Defense',
     description: 'A web video game created completely in vanilla JavaScript, with API calls to OpenWeather to serve time-accurate screen backgrounds',
     link: 'https://khilse.github.io/asteroid-defense/index.html',
+    githubClient: 'https://github.com/KHilse/asteroid-defense',
+    githubServer: '',
     image: 'asteroid-defense.png',
     skills: `
         <div class="skill">
@@ -130,6 +146,8 @@ export const ppContent = {
     title: 'Pedals and Pints',
     description: `An Express/NodeJS app to set up and track 'Bikes and Brews' bicycle rides`,
     link: 'https://pedals-and-pints-v1.herokuapp.com/',
+    githubClient: 'https://github.com/KHilse/pedals-and-pints-v1',
+    githubServer: '',
     image: 'pedals-and-pints.png',
     skills: `
         <div class="skill">
@@ -167,6 +185,8 @@ export const thContent = {
     title: 'tec.Hire',
     description: `A client (React) / server (Mongo/NodeJS) lightweight CRM to track your progress to finding a job in the tech industry`,
     link: 'https://pedals-and-pints-v1.herokuapp.com/',
+    githubClient: 'https://github.com/KHilse/techire-client',
+    githubServer: 'https://github.com/KHilse/techire-server',
     image: 'pedals-and-pints.png',
     skills: `
         <div class="skill">
@@ -188,6 +208,10 @@ export const thContent = {
         <div class="skill">
             <img src="./badges/mongodb.9e1e331b.svg" class="tech-icon">
             <p class="tech-title">MongoDB</p>
+        </div>
+        <div class="skill">
+            <img src="./badges/mongoose.png" class="tech-icon">
+            <p class="tech-title">Mongoose</p>
         </div>
         <div class="skill">
             <img src="./badges/html.f0361c5e.svg" class="tech-icon">

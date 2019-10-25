@@ -1,9 +1,10 @@
 body {
   font-size: 3vh;
+  background-color: rgb(240,240,255);
 }
 
 h2 {
-  margin: .5em 0;
+  margin: .5em 0 .25em 0;
 }
 
 p {
@@ -136,6 +137,29 @@ p {
   margin: 1em 1.5em;
 }
 
+.image-sidebar {
+  position: absolute;
+  height: 100%;
+  right: 0px;
+  text-align: right;
+}
+
+.image-sidebar-item {
+  width: 1.5em;
+  height: 5em;
+  overflow: hidden;
+  object-fit: cover;
+  transition: all .5s;
+}
+
+.image-sidebar-item:hover {
+  width: auto;
+  height: 6em;
+  overflow: hidden;
+  object-fit: cover;
+  transition: all .5s;
+}
+
 .nav-container {
   position: fixed;
   bottom: 5%;
@@ -145,6 +169,7 @@ p {
   transform: translate(-50%, 0px);
   margin: 0;
   padding: 0;
+  transition: left 1s, top 1s;
 }
 
 .nav-bar {
@@ -210,6 +235,7 @@ p {
 
 .project-link {
   font-size: .5em;
+  margin: 0 1em 0 0;
 }
 
 .project-screenshot {
