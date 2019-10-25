@@ -125,11 +125,13 @@ export const contactContent = {
     content: `
         <h2 class="text-item-heading">Contact Info</h2>
         <p class="text-item-content">Shoot me an e-mail or message me on LinkedIn, and I'll respond ASAP!</p>
-        <p class="text-item-content">khilsedev@gmail.com</p>
-        <p class="text-item-content"><a href="https://www.linkedin.com/in/kirk-hilse/">LinkedIn</a></p>
+        <p class="text-item-content">
+            <a href="mailto:khilsedev@gmail.com?Subject=Portfolio%20Contact" target="_new"><img class="logo-bug" src="emailbug.png"></a>&nbsp;
+            <a href="https://www.linkedin.com/in/kirk-hilse/"><img class="logo-bug" src="LinkedIn_logo_initials.png"></a>&nbsp;
+            <a href="https://www.facebook.com/kirk.hilse"><img class="logo-bug" src="f_logo_RGB-Hex-Blue_512.png"></a>
+        </p>
     `
 }
-
 
 export const krContent = {
     title: 'Krang React Synth',

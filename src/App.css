@@ -27,6 +27,11 @@ p {
   pointer-events: none;
 }
 
+.logo-bug {
+  height: 2em;
+  width: auto;
+}
+
 .header {
   position: absolute;
   width: 100%;
@@ -42,7 +47,7 @@ p {
 .subhead {
   margin: 0;
   padding: 0;
-  font-size: .8em;
+  font-size: .9em;
 }
 
 .App-link {
@@ -80,6 +85,7 @@ p {
   width: 200vh;
   height: 200vh;
   box-sizing: border-box;
+  cursor: pointer;
 }
 
 .menu-item {
@@ -93,6 +99,7 @@ p {
   padding: 0;
   transition: transform 1s;
   background-color: rgba(255, 255, 255, 0);
+  cursor: pointer;
 }
 
 .text-item {
@@ -138,7 +145,7 @@ p {
 }
 
 .text-item-content {
-  margin: 1em 1.5em;
+  margin: 1em 2em 0 1.5em;
 }
 
 .image-sidebar {
@@ -154,14 +161,16 @@ p {
   overflow: hidden;
   object-fit: cover;
   transition: all .5s;
+  cursor: pointer;
 }
 
 .image-sidebar-item:hover {
   width: auto;
-  height: 6em;
+  height: 8em;
   overflow: hidden;
   object-fit: cover;
   transition: all .5s;
+  cursor: pointer;
 }
 
 .nav-container {
@@ -196,6 +205,7 @@ p {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  cursor: pointer;
 }
 
 .nav-item {
