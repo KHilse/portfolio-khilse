@@ -5,15 +5,7 @@ import Nav from "./navigation/nav";
 import SpinMenu from "./pages/spinmenu";
 import ProjectItem from './pages/projectitem';
 import TextItem from './pages/textitem';
-import { bioContent, aboutContent, skillsContent } from './pages/textcontent';
-
-// Hint for the pages that match the index
-// 0: Bio
-// 1: About
-// 2: Skills
-// 3: Project: Asteroid Defense
-// 4: Project: Pedals and Pints
-// 5: Project: tec.Hire
+import { bioContent, aboutContent, skillsContent, adContent, ppContent, thContent } from './pages/textcontent';
 
 const App = props => {
 
@@ -27,6 +19,7 @@ const App = props => {
   const [thClass, setThClass] = useState('content hide-th');
   const [refresh] = useState(true);
 
+  // These are SVG paths for the moving background shapes
   const shape1 = [
     [-800, 400, 0],
     [400, -400, 60],
@@ -43,14 +36,10 @@ const App = props => {
     [400, -400, 60],
     [200, 300, 90]
   ];
-  const content = [
-    {
-      hideXPosition: '-105vw',
-      hideYPosition: '-20vh',
-    }
-  ];
-
-  const STEP_ANGLE = 60;
+  
+  // This is the angle the menu rotates for each left/right/swipe move
+  // 360 degrees / 6 items
+  const STEP_ANGLE = 360 / 6;
   
   useEffect(() => {
     setTimeout(() => {
@@ -59,11 +48,12 @@ const App = props => {
     })
   }, [refresh])
 
+  // The mouse-specific nav handler
   function handleNavClick(e) {
-    console.log('clicked', e.target.id, shapeIndex);
     handleNav(e.target.id);
   }
 
+  // The generic nav handler
   function handleNav(direction) {
     let newAngle = 0;
     if (direction === 'right') {
@@ -94,6 +84,8 @@ const App = props => {
   
   }
 
+  // Transition content panes off the page when not viewing
+  // Swapping CSS classes to achieve the effect
   function hideContent(i) {
     switch(i) {
       case 0: // bio
@@ -119,6 +111,8 @@ const App = props => {
     }
   }
 
+  // Transition content pane to the center of the page when focused
+  // Swapping CSS classes to achieve the effect
   function showContent(i) {
     switch(i) {
       case 0: // bio
@@ -150,9 +144,9 @@ const App = props => {
       <TextItem id="bio" class={bioClass} content={bioContent} />
       <TextItem id="about" class={aboutClass} content={aboutContent} />
       <TextItem id="skills" class={skillsClass} content={skillsContent} />
-      <ProjectItem id="ad" class={adClass} />
-      <ProjectItem id="pp" class={ppClass} />
-      <ProjectItem id="th" class={thClass} />
+      <ProjectItem id="ad" class={adClass} content={adContent} />
+      <ProjectItem id="pp" class={ppClass} content={ppContent} />
+      <ProjectItem id="th" class={thClass} content={thContent} />
       <SpinMenu navAngleOffset={navAngleOffset} handleNav={handleNav} />
       <Nav handleNavClick={handleNavClick} handleNav={handleNav} />
     </div>

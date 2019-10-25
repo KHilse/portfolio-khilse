@@ -2,13 +2,13 @@ body {
   font-size: 3vh;
 }
 
+h2 {
+  margin: .5em 0;
+}
+
 p {
   font-family: sans-serif;
 }
-
-/* svg {
-  background-color: lightgray;
-} */
 
 .App {
   position: absolute;
@@ -182,6 +182,34 @@ p {
   height: 400px;
   transition: left 1s, top 1s, transform 1s;
   z-index: -1;
+}
+
+.project-skills {
+  position: relative;
+  width: 140px;
+  max-width: 140px;
+  height: 100%;
+  float: left;
+}
+
+.skill {
+  float: left;
+  text-align: center;
+  font-size: .6em;
+  width: 90%;
+  height: 4em;
+  margin: 0;
+  padding: 1em 0 0 0;
+}
+
+.project-content {
+  float: left;
+  width: calc(100% - 148px);
+  padding: 0 8px 0 0;
+}
+
+.project-link {
+  font-size: .5em;
 }
 
 .project-screenshot {

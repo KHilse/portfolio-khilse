@@ -4,7 +4,7 @@ export const menuItems = [
     [ 'Skills', 300 ],
     [ 'Project: Asteroid Defense', 0 ],
     [ 'Project: Pedals and Pints', 60 ],
-    [ 'Project: tec.Hire', 120 ]
+    [ 'Project: tec.Hire', 120 ],
 ]
 
 export const bioContent = {
@@ -109,19 +109,93 @@ export const adContent = {
     title: 'Asteroid Defense',
     description: 'A web video game created completely in vanilla JavaScript, with API calls to OpenWeather to serve time-accurate screen backgrounds',
     link: 'https://khilse.github.io/asteroid-defense/index.html',
-    image: 'asteroid-defense.png'
+    image: 'asteroid-defense.png',
+    skills: `
+        <div class="skill">
+            <img src="./badges/js.7fd50466.svg" class="tech-icon">
+            <p class="tech-title">JavaScript</p>
+        </div>
+        <div class="skill">
+            <img src="./badges/html.f0361c5e.svg" class="tech-icon">
+            <p class="tech-title">HTML&nbsp;5</p>
+        </div>
+        <div class="skill">
+            <img src="./badges/css.6971ddc7.svg" class="tech-icon">
+            <p class="tech-title">CSS</p>
+        </div>
+    `
 }
 
 export const ppContent = {
     title: 'Pedals and Pints',
     description: `An Express/NodeJS app to set up and track 'Bikes and Brews' bicycle rides`,
     link: 'https://pedals-and-pints-v1.herokuapp.com/',
-    image: 'pedals-and-pints.png'
+    image: 'pedals-and-pints.png',
+    skills: `
+        <div class="skill">
+            <img src="./badges/download.png" class="tech-icon">
+            <p class="tech-title">Express</p>
+        </div>
+        <div class="skill">
+            <img src="./badges/nodejs.ab587808.svg" class="tech-icon">
+            <p class="tech-title">NodeJS</p>
+        </div>
+        <div class="skill">
+            <img src="./badges/js.7fd50466.svg" class="tech-icon">
+            <p class="tech-title">JavaScript</p>
+        </div>
+        <div class="skill">
+            <img src="./badges/postgresql.d7c985e7.svg" class="tech-icon">
+            <p class="tech-title">PostgreSQL</p>
+        </div>
+        <div class="skill">
+            <img src="./badges/sequelize.43c9d125.svg" class="tech-icon">
+            <p class="tech-title">Sequelize</p>
+        </div>
+        <div class="skill">
+            <img src="./badges/html.f0361c5e.svg" class="tech-icon">
+            <p class="tech-title">HTML&nbsp;5</p>
+        </div>
+        <div class="skill">
+            <img src="./badges/css.6971ddc7.svg" class="tech-icon">
+            <p class="tech-title">CSS</p>
+        </div>
+    `
 }
 
 export const thContent = {
     title: 'tec.Hire',
     description: `A client (React) / server (Mongo/NodeJS) lightweight CRM to track your progress to finding a job in the tech industry`,
     link: 'https://pedals-and-pints-v1.herokuapp.com/',
-    image: 'pedals-and-pints.png'
+    image: 'pedals-and-pints.png',
+    skills: `
+        <div class="skill">
+            <img src="./badges/react.4009eef3.svg" class="tech-icon">
+            <p class="tech-title">React</p>
+        </div>
+        <div class="skill">
+            <img src="./badges/react-router.02419671.svg" class="tech-icon">
+            <p class="tech-title">React-router</p>
+        </div>
+        <div class="skill">
+            <img src="./badges/nodejs.ab587808.svg" class="tech-icon">
+            <p class="tech-title">NodeJS</p>
+        </div>
+        <div class="skill">
+            <img src="./badges/js.7fd50466.svg" class="tech-icon">
+            <p class="tech-title">JavaScript</p>
+        </div>
+        <div class="skill">
+            <img src="./badges/mongodb.9e1e331b.svg" class="tech-icon">
+            <p class="tech-title">MongoDB</p>
+        </div>
+        <div class="skill">
+            <img src="./badges/html.f0361c5e.svg" class="tech-icon">
+            <p class="tech-title">HTML&nbsp;5</p>
+        </div>
+        <div class="skill">
+            <img src="./badges/css.6971ddc7.svg" class="tech-icon">
+            <p class="tech-title">CSS</p>
+        </div>
+    `
 }
