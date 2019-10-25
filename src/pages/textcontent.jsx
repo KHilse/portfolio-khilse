@@ -12,7 +12,7 @@ export const bioContent = {
     <p class="text-item-content">I’m a full-stack software developer who grew up in the Seattle area. I’ve been super lucky to work on some awesome projects at great companies, and I’m looking to continue the trend.</p>
     <p class="text-item-content">I am a UW Seattle grad with a BS in Music Technology, which is a fusion of CSci and Music. The core classes matched both the CSci core curriculum and the School of Music curriculum, with calc, diff eq, and physics thrown in as well. Beyond that, I elected in audio engineering, algorithmic synthesis and composition, and psychomusicology.</p>
     <p class="text-item-content">After graduation, I went to work at Spectral Inc., a company that made the first affordable digital audio recording and editing workstation platform for the recording industry. I was the first hire, and as the company grew to 17 employees, I moved through nearly every part of the company, including software development, marketing, logistics, internal infrastructure, and top-level customer support. My tenure ended after seven years when the company was purchased and dismantled for its IP.</p>
-    <p class="text-item-content">I then did a short stint in IT while looking, then landed a contract job as software QA at Microsoft. I tested Active Directory administration and application compatibility on the Windows 2000 Server project for around 18 months.</p>
+    <p class="text-item-content">Next I landed a contract job as software QA at Microsoft. I tested Active Directory administration and application compatibility on the Windows 2000 Server project for around 18 months.</p>
     <p class="text-item-content">I then went to Microsoft’s Developer Division as a full-time SDE/T employee. I started on the Scripting team, which developed VBScript and Microsoft’s implementation of JavaScript. I then worked on VSTO 1 and 2, Microsoft’s Visual Studio dev tools for code behind Office documents. Finally the team spun up the net-new SharePoint Developer Tools project and I worked on that for the remainder of my time there, a total of 9.5 years.</p>
     <p class="text-item-content">At that point I burned out. Microsoft’s first version of agile development made for a brutal work environment, and even though I held on through two enormous 1.5-year product cycles, I finally called it quits along many other coworkers.</p>
     <p class="text-item-content">I then departed the software industry for a decade to start up a commercial craft brewery as its CEO. I built the brewery up from bare floor and ran it for 5.5 years in production before selling it to some good industry friends. At that time I looked at my options and found that the software industry had matured quite a lot, so I decided to reenter.</p>
@@ -25,7 +25,7 @@ export const aboutContent = {
     content: `
         <p class="text-item-content">Outside of software, I am married with two grown kids and most of my family resides in the area.</p>
         <p class="text-item-content">For relaxation outdoors, I enjoy sailing, bicycle riding, and the occasional hike. I'm a member at Sand Point Sailing on Lake Washington.</p>
-        <p class="text-item-content">For relaxation indoors, I like to cook, watch shows with my wife, and I generally stick to RPG or strategy video games.</p>
+        <p class="text-item-content">For relaxation indoors, I like to cook, watch shows with my wife, and I generally stick to RPG or strategy video games. I'm a huge fan of KSP and Bethesda products.</p>
         <p class="text-item-content">I'm an active semi-pro musician. I play bass in Balkanarama, an Eastern Mediterranean gypsy dance band. Yes, it's as fun as it sounds. But I've played in nearly every genre, classical to metal to trip-hop.</p>
     `
 }
@@ -34,24 +34,44 @@ export const skillsContent = {
     content: `
         <div class="tech-container">
             <div class="tech">
+                    <img src="./badges/typescript-1174965.png" class="tech-icon">
+                <p class="tech-title">TypeScript</p>
+            </div>
+            <div class="tech">
                  <img src="./badges/react.4009eef3.svg" class="tech-icon">
                 <p class="tech-title">React</p>
             </div>
             <div class="tech">
-                <img src="./badges/css.6971ddc7.svg" class="tech-icon">
-                <p class="tech-title">CSS</p>
+                <img src="./badges/react-router.02419671.svg" class="tech-icon">
+                <p class="tech-title">React-router</p>
             </div>
             <div class="tech">
                  <img src="./badges/download.png" class="tech-icon">
                  <p class="tech-title">Express</p>
             </div>
             <div class="tech">
-                <img src="./badges/git.1190a19c.svg" class="tech-icon">
-                <p class="tech-title">Git</p>
+                <img src="./badges/nodejs.ab587808.svg" class="tech-icon">
+                <p class="tech-title">NodeJS</p>
             </div>
             <div class="tech">
-                <img src="./badges/github.0ff1a6f0.svg" class="tech-icon">
-                <p class="tech-title">GitHub</p>
+                <img src="./badges/js.7fd50466.svg" class="tech-icon">
+                <p class="tech-title">JavaScript</p>
+            </div>
+            <div class="tech">
+                <img src="./badges/python.146716bd.svg" class="tech-icon">
+                <p class="tech-title">Python</p>
+            </div>
+            <div class="tech">
+                <img src="./badges/mongodb.9e1e331b.svg" class="tech-icon">
+                <p class="tech-title">MongoDB</p>
+            </div>
+            <div class="tech">
+                <img src="./badges/postgresql.d7c985e7.svg" class="tech-icon">
+                <p class="tech-title">PostgreSQL</p>
+            </div>
+            <div class="tech">
+                <img src="./badges/sequelize.43c9d125.svg" class="tech-icon">
+                <p class="tech-title">Sequelize</p>
             </div>
             <div class="tech">
                 <img src="./badges/heroku.9298b914.png" class="tech-icon">
@@ -62,32 +82,16 @@ export const skillsContent = {
                 <p class="tech-title">HTML&nbsp;5</p>
             </div>
             <div class="tech">
-                <img src="./badges/js.7fd50466.svg" class="tech-icon">
-                <p class="tech-title">JavaScript</p>
+                <img src="./badges/css.6971ddc7.svg" class="tech-icon">
+                <p class="tech-title">CSS</p>
             </div>
             <div class="tech">
-                <img src="./badges/mongodb.9e1e331b.svg" class="tech-icon">
-                <p class="tech-title">MongoDB</p>
+                <img src="./badges/git.1190a19c.svg" class="tech-icon">
+                <p class="tech-title">Git</p>
             </div>
             <div class="tech">
-                <img src="./badges/nodejs.ab587808.svg" class="tech-icon">
-                <p class="tech-title">NodeJS</p>
-            </div>
-            <div class="tech">
-                <img src="./badges/postgresql.d7c985e7.svg" class="tech-icon">
-                <p class="tech-title">PostgreSQL</p>
-            </div>
-            <div class="tech">
-                <img src="./badges/python.146716bd.svg" class="tech-icon">
-                <p class="tech-title">Python</p>
-            </div>
-            <div class="tech">
-                <img src="./badges/react-router.02419671.svg" class="tech-icon">
-                <p class="tech-title">React-router</p>
-            </div>
-            <div class="tech">
-                <img src="./badges/sequelize.43c9d125.svg" class="tech-icon">
-                <p class="tech-title">Sequelize</p>
+                <img src="./badges/github.0ff1a6f0.svg" class="tech-icon">
+                <p class="tech-title">GitHub</p>
             </div>
             <div class="tech">
                 <img src="./badges/terminal.8b636004.svg" class="tech-icon">
@@ -97,20 +101,27 @@ export const skillsContent = {
                 <img src="./badges/vs-code.389f119b.svg" class="tech-icon">
                 <p class="tech-title">VS Code</p>
             </div>
-            <div class="tech">
-                <img src="./badges/typescript-1174965.png" class="tech-icon">
-                <p class="tech-title">TypeScript</p>
-            </div>
         </div>
             `
 }
 
+export const adContent = {
+    title: 'Asteroid Defense',
+    description: 'A web video game created completely in vanilla JavaScript, with API calls to OpenWeather to serve time-accurate screen backgrounds',
+    link: 'https://khilse.github.io/asteroid-defense/index.html',
+    image: 'asteroid-defense.png'
+}
 
-//     ['text', 'Biography', , '', 60],
-//     ['text', 'Blog', `
-//     <content>
-//         <p>This is my <strong>blog</strong></p>
-//     </content>`, '', 120],
-//     ['project', 'Asteroid Defense', 'https://khilse.github.io/asteroid-defense/index.html', 'asteroid-defense.png', 180],
-//     ['project', 'Pedals and Pints', 'https://pedals-and-pints-v1.herokuapp.com/', 'pedals-and-pints.png', 240]
-// ]
+export const ppContent = {
+    title: 'Pedals and Pints',
+    description: `An Express/NodeJS app to set up and track 'Bikes and Brews' bicycle rides`,
+    link: 'https://pedals-and-pints-v1.herokuapp.com/',
+    image: 'pedals-and-pints.png'
+}
+
+export const thContent = {
+    title: 'tec.Hire',
+    description: `A client (React) / server (Mongo/NodeJS) lightweight CRM to track your progress to finding a job in the tech industry`,
+    link: 'https://pedals-and-pints-v1.herokuapp.com/',
+    image: 'pedals-and-pints.png'
+}

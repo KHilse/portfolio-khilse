@@ -240,20 +240,27 @@ p {
 .tech-container {
   width: 100%;
   height: 100%;
-  display: grid;
-  grid-template-columns: auto auto auto auto auto auto;
-  grid-template-rows: auto auto auto;
+  text-align: center;
+  /* display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  grid-template-rows: auto auto auto; */
   overflow: auto;
 }
 
 .tech {
+  float: left;
   text-align: center;
-  width: 15%;
-  padding: 1em;
+  width: 20%;
+  min-width: 160px;
+  height: 30%;
+  max-height: 30%;
+  margin: 0;
+  padding: 1em 0 0 0;
 }
 
 .tech-icon {
-  display: inline-block;
+  /* display: inline-block;
+  align-self: center; */
   width: auto;
   height: 50%;
   max-height: 50%;
