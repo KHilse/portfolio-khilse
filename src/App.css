@@ -175,7 +175,7 @@ p {
 @media screen and (max-aspect-ratio: 1/1) {
   .nav-container {
     position: fixed;
-    bottom: 6%;
+    bottom: 4%;
     left: 50%;
     width: 50%;
     height: 5%;
