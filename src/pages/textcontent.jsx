@@ -144,7 +144,7 @@ export const adContent = {
 
 export const ppContent = {
     title: 'Pedals and Pints',
-    description: `An Express/NodeJS app to set up and track 'Bikes and Brews' bicycle rides`,
+    description: `An Express/JavaScript app to set up and track 'Bikes and Brews' bicycle rides`,
     link: 'https://pedals-and-pints-v1.herokuapp.com/',
     githubClient: 'https://github.com/KHilse/pedals-and-pints-v1',
     githubServer: '',
@@ -183,7 +183,7 @@ export const ppContent = {
 
 export const thContent = {
     title: 'tec.Hire',
-    description: `A client (React) / server (Mongo/NodeJS) lightweight CRM to track your progress to finding a job in the tech industry`,
+    description: `A client/server (Mongo/Express/React) lightweight CRM to track your progress to finding a job in the tech industry`,
     link: 'https://pedals-and-pints-v1.herokuapp.com/',
     githubClient: 'https://github.com/KHilse/techire-client',
     githubServer: 'https://github.com/KHilse/techire-server',
