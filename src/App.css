@@ -30,6 +30,21 @@ p {
 .logo-bug {
   height: 2em;
   width: auto;
+  vertical-align: text-top;
+  box-shadow: .25em .25em .25em .05em black;
+  cursor: pointer;
+}
+
+.logo-bug-size {
+  height: 2em;
+  width: auto;
+  transition: height .5s;
+}
+
+.logo-bug-size:hover {
+  height: 2.5em;
+  width: auto;
+  transition: height .5s;
 }
 
 .header {
@@ -199,7 +214,6 @@ p {
   }
 }
 
-
 .nav-bar {
   text-decoration: none;
   list-style-type: none;
@@ -271,7 +285,6 @@ p {
   width: 100%;
   height: auto;
   max-width: 256px;
-  max-height: 180px;
 }
 
 .content {
@@ -329,6 +342,12 @@ p {
   top: 90vh;
   left: -115vw;
 }
+
+.hide-portfolio {
+  top: -60vh;
+  left: -115vw;
+}
+
 
 .tech-container {
   width: 100%;

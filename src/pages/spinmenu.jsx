@@ -6,7 +6,7 @@ import { useSwipeable } from 'react-swipeable';
 const SpinMenu = props => {
 
 	const [items, setItems] = useState(menuItems);
-	const [navAngleOffset, setNavAngleOffset] = useState(props.navAngleOffset);
+	const [navAngleOffset] = useState(props.navAngleOffset);
 	const [style, setStyle] = useState('');
 
 	// The menu rotates, so left/right reversal makes more sense from a UX perspective :-)
@@ -30,7 +30,7 @@ const SpinMenu = props => {
 	function handleTimeout() {
 		let proj = [...items];
 		proj.forEach(project => {
-			project[1] -= 180;
+			project[1] -= 200;
 		})
 		setItems(proj);
 	}

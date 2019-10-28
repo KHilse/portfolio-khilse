@@ -1,12 +1,13 @@
 export const menuItems = [
-    [ 'Biography', 180 ],
-    [ 'About Me', 225 ],
-    [ 'Skills', 270 ],
-    [ 'Contact', 315 ],
+    [ 'Biography', 200 ],
+    [ 'About Me', 240 ],
+    [ 'Skills', 280 ],
+    [ 'Contact', 320 ],
     [ 'Project: Krang React Synth', 0 ],
-    [ 'Project: Asteroid Defense', 45 ],
-    [ 'Project: Pedals and Pints', 90 ],
-    [ 'Project: tec.Hire', 135 ],
+    [ 'Project: Asteroid Defense', 40 ],
+    [ 'Project: Pedals and Pints', 80 ],
+    [ 'Project: tec.Hire', 120 ],
+    [ 'Project: My Portfolio Site', 160 ],
 ]
 
 export const bioContent = {
@@ -126,9 +127,9 @@ export const contactContent = {
         <h2 class="text-item-heading">Contact Info</h2>
         <p class="text-item-content">Shoot me an e-mail or message me on LinkedIn, and I'll respond ASAP!</p>
         <p class="text-item-content">
-            <a href="mailto:khilsedev@gmail.com?Subject=Portfolio%20Contact" target="_new"><img class="logo-bug" src="emailbug.png"></a>&nbsp;
-            <a href="https://www.linkedin.com/in/kirk-hilse/"><img class="logo-bug" src="LinkedIn_logo_initials.png"></a>&nbsp;
-            <a href="https://www.facebook.com/kirk.hilse"><img class="logo-bug" src="f_logo_RGB-Hex-Blue_512.png"></a>
+            <a href="mailto:khilsedev@gmail.com?Subject=Portfolio%20Contact" target="_new"><img class="logo-bug logo-bug-size" src="emailbug.png"></a>&nbsp;
+            <a href="https://www.linkedin.com/in/kirk-hilse/"><img class="logo-bug logo-bug-size" src="LinkedIn_logo_initials.png"></a>&nbsp;
+            <a href="https://www.facebook.com/kirk.hilse"><img class="logo-bug logo-bug-size" src="f_logo_RGB-Hex-Blue_512.png"></a>
         </p>
     `
 }
@@ -253,6 +254,33 @@ export const thContent = {
         <div class="skill">
             <img src="./badges/mongoose.png" class="tech-icon">
             <p class="tech-title">Mongoose</p>
+        </div>
+        <div class="skill">
+            <img src="./badges/html.f0361c5e.svg" class="tech-icon">
+            <p class="tech-title">HTML&nbsp;5</p>
+        </div>
+        <div class="skill">
+            <img src="./badges/css.6971ddc7.svg" class="tech-icon">
+            <p class="tech-title">CSS</p>
+        </div>
+    `
+}
+
+export const portfolioContent = {
+    title: 'My Portfolio Site',
+    description: `A responsive design-heavy React client site built with ONLY React, JavaScript and CSS. No boilerplate, no CSS templates, and only one media query. (I really added this pane because I like recursion and images that have smaller copies of themselves)`,
+    link: 'https://kirkh-portfolio.herokuapp.com/',
+    githubClient: 'https://github.com/KHilse/portfolio-khilse',
+    githubServer: '',
+    image: 'portfolio.png',
+    skills: `
+        <div class="skill">
+            <img src="./badges/react.4009eef3.svg" class="tech-icon">
+            <p class="tech-title">React</p>
+        </div>
+        <div class="skill">
+            <img src="./badges/js.7fd50466.svg" class="tech-icon">
+            <p class="tech-title">JavaScript</p>
         </div>
         <div class="skill">
             <img src="./badges/html.f0361c5e.svg" class="tech-icon">

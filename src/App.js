@@ -5,7 +5,7 @@ import Nav from "./navigation/nav";
 import SpinMenu from "./pages/spinmenu";
 import ProjectItem from './pages/projectitem';
 import TextItem from './pages/textitem';
-import { bioContent, aboutContent, skillsContent, contactContent, krContent, adContent, ppContent, thContent } from './pages/textcontent';
+import { bioContent, aboutContent, skillsContent, contactContent, krContent, adContent, ppContent, thContent, portfolioContent } from './pages/textcontent';
 
 const App = props => {
 
@@ -19,11 +19,13 @@ const App = props => {
   const [adClass, setAdClass] = useState('content hide-ad');
   const [ppClass, setPpClass] = useState('content hide-pp');
   const [thClass, setThClass] = useState('content hide-th');
+  const [portfolioClass, setPortfolioClass] = useState('content hide-portfolio');
   const [refresh] = useState(true);
 
   // These are SVG paths for the moving background shapes
   const shape1 = [
     [-800, 400, 0],
+    [-200, 0, 40],
     [400, -400, 60],
     [200, 300, 90],
     [-200, 100, 45],
@@ -39,13 +41,14 @@ const App = props => {
     [300, -150, -90],
     [100, -300, -45],
     [-800, 400, 0],
+    [-200, 0, 40],
     [400, -400, 60],
     [200, 300, 90],
   ];
   
   // This is the angle the menu rotates for each left/right/swipe move
   // 360 degrees / 6 items
-  const CONTENT_ITEMS = 8;
+  const CONTENT_ITEMS = 9;
   const STEP_ANGLE = 360 / CONTENT_ITEMS;
   
   useEffect(() => {
@@ -98,26 +101,29 @@ const App = props => {
       case 0: // bio
         setBioClass('content hide-bio');
         break;
-      case 7: // about
+      case 8: // about
         setAboutClass('content hide-about');
         break;
-      case 6: // skills
+      case 7: // skills
         setSkillsClass('content hide-skills');
         break;
-      case 5: // contact
+      case 6: // contact
         setContactClass('content hide-contact');
         break;
-      case 4: // kr
+      case 5: // kr
         setKrClass('content hide-kr');
         break;
-      case 3: // ad
+      case 4: // ad
         setAdClass('content hide-ad');
         break;
-      case 2: // pp
+      case 3: // pp
         setPpClass('content hide-pp');
         break;
-      case 1: // th
+      case 2: // th
         setThClass('content hide-th');
+        break;
+       case 1: // portfolio
+        setPortfolioClass('content hide-portfolio');
         break;
       default:
         break;
@@ -131,26 +137,29 @@ const App = props => {
       case 0: // bio
         setBioClass('content content-show');
         break;
-      case 7: // about
+      case 8: // about
         setAboutClass('content content-show');
         break;
-      case 6: // skills
+      case 7: // skills
         setSkillsClass('content content-show');
         break;
-      case 5: // contact
+      case 6: // contact
         setContactClass('content content-show');
         break;
-      case 4: // kr
+      case 5: // kr
         setKrClass('content content-show');
         break;
-      case 3: // ad
+      case 4: // ad
         setAdClass('content content-show');
         break;
-      case 2: // pp
+      case 3: // pp
         setPpClass('content content-show');
         break;
-      case 1: // th
+      case 2: // th
         setThClass('content content-show');
+        break;
+      case 1: // portfolio
+        setPortfolioClass('content content-show');
         break;
       default:
         break;
@@ -168,6 +177,7 @@ const App = props => {
       <ProjectItem id="ad" class={adClass} content={adContent} />
       <ProjectItem id="pp" class={ppClass} content={ppContent} />
       <ProjectItem id="th" class={thClass} content={thContent} />
+      <ProjectItem id="portfolio" class={portfolioClass} content={portfolioContent} />
       <SpinMenu navAngleOffset={navAngleOffset} handleNav={handleNav} />
       <Nav handleNavClick={handleNavClick} handleNav={handleNav} />
     </div>
