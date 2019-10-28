@@ -22,10 +22,11 @@ export const bioContent = {
     <p class="text-item-content">After graduation, I went to work at Spectral Inc., a company that made the first affordable digital audio recording and editing workstation platform for the recording industry. I was the first hire, and as the company grew to 17 employees, I moved through nearly every part of the company, including software development, marketing, logistics, internal infrastructure, and top-level customer support. My tenure ended after seven years when the company was purchased and dismantled for its IP.</p>
     <p class="text-item-content">Next I landed a contract job as software QA at Microsoft. I tested Active Directory administration and application compatibility on the Windows 2000 Server project for around 18 months.</p>
     <p class="text-item-content">I then went to Microsoft’s Developer Division as a full-time SDE/T employee. I started on the Scripting team, which developed VBScript and Microsoft’s implementation of JavaScript. I then worked on VSTO 1 and 2, Microsoft’s Visual Studio dev tools for code behind Office documents. Finally the team spun up the net-new SharePoint Developer Tools project and I worked on that for the remainder of my time there, a total of 9.5 years.</p>
-    <p class="text-item-content">At that point I burned out. Microsoft’s first version of agile development made for a brutal work environment, and even though I held on through two enormous 1.5-year product cycles, I finally called it quits along many other coworkers.</p>
-    <p class="text-item-content">I then departed the software industry for a decade to start up a commercial craft brewery as its CEO. I built the brewery up from bare floor and ran it for 5.5 years in production before selling it to some good industry friends. At that time I looked at my options and found that the software industry had matured quite a lot, so I decided to reenter.</p>
+    <p class="text-item-content">At that point <a class="ee" href="https://www.youtube.com/watch?v=nG5xMHb4D3E">I burned out</a>. Microsoft’s first version of agile development made for a brutal work environment, and even though I held on through two enormous 1.5-year product cycles, I finally called it quits along many other coworkers.</p>
+    <p class="text-item-content">I then departed the software industry for a decade to start up a commercial craft brewery as its CEO. I built the brewery up from bare floor and ran it for 5.5 years in production before selling it to some good industry friends. At that time I looked at my options and found that the software industry agile culture had matured quite a lot, so I decided to reenter.</p>
     <p class="text-item-content">It didn’t take long to find out that my skill set was quite dated. In the span of a decade, languages, platforms and other technologies had been created, updated, and in some cases retired. Since I already had a solid base of computer science experience, I decided that the most expedient way to get current was to go through a software development bootcamp. I have recently graduated from General Assembly Seattle, first in class with current MERN stack experience along with TypeScript and some Python/Flask.</p>
     <p class="text-item-content">I’m currently looking for a full-stack development career at a smaller company which is doing something interesting and helpful to people. I hope to work with very bright people in an encouraging and healthy culture, where I can innovate while leveraging my experience to make the team more well-rounded.</p>
+    <p class="text-item-content">&nbsp;</p>
     `
 };
 
@@ -39,8 +40,9 @@ export const aboutContent = {
         <p class="text-item-content">Outside of software, I am married with two grown kids and most of my family resides in the area.</p>
         <p class="text-item-content">For relaxation outdoors, I enjoy sailing, bicycle riding, and the occasional hike. I'm a member at Sand Point Sailing on Lake Washington.</p>
         <p class="text-item-content">For relaxation indoors, I like to cook, watch shows with my wife, and I generally stick to RPG or strategy video games. I'm a huge fan of KSP and Bethesda products.</p>
-        <p class="text-item-content">I'm an active semi-pro musician. I play bass in Balkanarama, an Eastern Mediterranean gypsy dance band. Yes, it's as fun as it sounds. But I've played in nearly every genre, classical to metal to trip-hop. When I was at Microsoft, I toured with an employee band to corporate events across the country.</p>
-    `
+        <p class="text-item-content">I'm an active semi-pro musician. I play bass in <a class="ee" href="https://www.youtube.com/watch?v=yQeKVQHhewI" target="_new">Balkanarama</a>, an Eastern Mediterranean gypsy dance band. Yes, it's as fun as it sounds. But I've played in nearly every genre, classical to metal to trip-hop. When I was at Microsoft, I toured with an employee band to corporate events across the country.</p>
+        <p class="text-item-content">&nbsp;</p>
+        `
 }
 
 export const skillsContent = {
@@ -91,10 +93,6 @@ export const skillsContent = {
                 <p class="tech-title">Sequelize</p>
             </div>
             <div class="tech">
-                <img src="./badges/heroku.9298b914.png" class="tech-icon">
-                <p class="tech-title">Heroku</p>
-            </div>
-            <div class="tech">
                 <img src="./badges/html.f0361c5e.svg" class="tech-icon">
                 <p class="tech-title">HTML&nbsp;5</p>
             </div>
@@ -109,6 +107,10 @@ export const skillsContent = {
             <div class="tech">
                 <img src="./badges/github.0ff1a6f0.svg" class="tech-icon">
                 <p class="tech-title">GitHub</p>
+            </div>
+            <div class="tech">
+                <img src="./badges/heroku.9298b914.png" class="tech-icon">
+                <p class="tech-title">Heroku</p>
             </div>
             <div class="tech">
                 <img src="./badges/terminal.8b636004.svg" class="tech-icon">
@@ -136,7 +138,7 @@ export const contactContent = {
 
 export const krContent = {
     title: 'Krang React Synth',
-    description: 'A React client-only SPA drum machine and theremin simulator, created in one day in a hackathon at GA consisting of teams of two students',
+    description: 'A React client-only SPA drum machine and <a class="ee" href="https://www.youtube.com/watch?v=bXn4_JkVFVo">theremin</a> simulator, created in one day in a hackathon at GA consisting of teams of two students',
     link: 'https://krang-react-synth.herokuapp.com/',
     githubClient: 'https://github.com/KHilse/krang-react-synth',
     githubServer: '',
@@ -268,7 +270,9 @@ export const thContent = {
 
 export const portfolioContent = {
     title: 'My Portfolio Site',
-    description: `A responsive design-heavy React client site built with ONLY React, JavaScript and CSS. No boilerplate, no CSS templates, and only one media query. (I really added this pane because I like recursion and images that have smaller copies of themselves)`,
+    description: `
+        <p>A responsive design-heavy React client site built with ONLY React, JavaScript and CSS. No boilerplate, no CSS templates, only one media query, and three SFW Easter egg links!</p>
+        <p>[I really added this pane because I like recursion and images that have smaller copies of themselves]</p>`,
     link: 'https://kirkh-portfolio.herokuapp.com/',
     githubClient: 'https://github.com/KHilse/portfolio-khilse',
     githubServer: '',

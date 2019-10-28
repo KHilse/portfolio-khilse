@@ -18,7 +18,7 @@ const ProjectItem = props => {
             :
                 <></>
             }
-            <p>{props.content.description}</p>
+            <p dangerouslySetInnerHTML={{ __html: props.content.description}}></p>
             <img className="project-screenshot" src={props.content.image} />
             </div>
         </div>
