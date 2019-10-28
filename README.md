@@ -3,7 +3,7 @@
 ## Development Log
 
 **Date** | **Description**
-____ | ____
+--------|--------
 2019-10-28 | Added a pane for the portfolio project, set up Easter eggs, CSS
 2019-10-25 | Added project panes, CSS
 2019-10-24 | First deployment to Heroku, added swipe handler for touch screen support, CSS
