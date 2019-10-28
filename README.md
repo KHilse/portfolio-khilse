@@ -1,68 +1,35 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# My Portfolio Site
+ 
+## Development Log
 
-## Available Scripts
+**Date** | **Description**
+____ | ____
+2019-10-28 | Added a pane for the portfolio project, set up Easter eggs, CSS
+2019-10-25 | Added project panes, CSS
+2019-10-24 | First deployment to Heroku, added swipe handler for touch screen support, CSS
+2019-10-23 | Implemented content pane switching and animation, many CSS improvements
+2019-10-22 | Added moving background, refactored content away from menu, added some content
+2019-10-21 | Pushing all layout to responsive design, starting with spin menu
+2019-09-26 | First pass at spinning menu
+2019-09-25 | Modified the site as a SPA and added some actual content and a first pass at CSS layout
+2019-09-17 | This came up as a homework item, but I decided to use it as my actual portfolio project. The assignment was to create a React client app with multiple pages and placeholder text 
 
-In the project directory, you can run:
+### Issues
+* **OPEN:** CSS fly-out images in text panes -- The goal was to advertise the images but have them take up minimal space in the layout to be more mobile-friendly. My first attempt was to crop the images in a div and expand them with mouseovers, but it doesn't transition well, and isn't particularly responsive. Also, feedback was that the slim images looked as if they suffered from accidental positioning errors.
+* **RESOLVED:** CSS tech icon layout -- Started with css-grid layout but although the positioning of the icons and text in each grid pane was great, it didn't scale to mobile very well. I solved this by abandoning css-grid and using float: left so the grid panes aligned themselves in columns depending on the client width.
 
-### `npm start`
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Research and Design Ideas
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+#### Goals
+* Show off design chops
+* No-scroll design
+* Responsive
+* Professional look with memorable character
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+#### Example sites for inspiration
+* https://www.qedgroup.cz/en/
+* http://www.antonandirene.com/
+* https://jybh.fr/en/
+* https://creationsnamale.com/
+* http://www.tareqismail.com/index.html
