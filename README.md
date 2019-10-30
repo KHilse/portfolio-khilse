@@ -3,7 +3,7 @@
 ## Development Log
 
 **Date** | **Description**
---------|--------
+------------|------------
 2019-10-28 | Added a pane for the portfolio project, set up Easter eggs, CSS
 2019-10-25 | Added project panes, CSS
 2019-10-24 | First deployment to Heroku, added swipe handler for touch screen support, CSS
@@ -19,7 +19,7 @@
 * **RESOLVED:** CSS tech icon layout -- Started with css-grid layout but although the positioning of the icons and text in each grid pane was great, it didn't scale to mobile very well. I solved this by abandoning css-grid and using float: left so the grid panes aligned themselves in columns depending on the client width.
 
 
-### Research and Design Ideas
+## Research and Design Ideas
 
 #### Goals
 * Show off design chops

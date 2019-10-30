@@ -61,6 +61,10 @@ export const skillsContent = {
                 <p class="tech-title">React-router</p>
             </div>
             <div class="tech">
+                <img src="./badges/redux.png" class="tech-icon">
+                <p class="tech-title">Redux</p>
+            </div>
+            <div class="tech">
                  <img src="./badges/download.png" class="tech-icon">
                  <p class="tech-title">Express</p>
             </div>
