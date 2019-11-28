@@ -383,6 +383,8 @@ p {
   width: auto;
   height: 50%;
   max-height: 50%;
+  filter: drop-shadow(.1em .1em .1em black);
+
 }
 
 .tech-title {
