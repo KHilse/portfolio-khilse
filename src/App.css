@@ -299,7 +299,7 @@ p {
   width: 90vw;
   height: 60vh;
   background-color: rgba(208,180,192,.85);
-  box-shadow: 1em 1em 1em .05em black;
+  box-shadow: .5em .5em .5em .025em black;
   text-align: left;
   overflow: auto;
   transition: left 1s, top 1s;
